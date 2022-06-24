@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="stilinho.css">
+    <style>
+              
+        #nav-bar{
+          background-image: linear-gradient(black,black,black,rgb(15%15%15%));
+        }
+        .nav-link{
+          color: white;
+        }
+        .nav-link active{
+          color: white;
+        }
+        .nav-item dropdown{
+          margin-top: -10px;
+        }
+        body{
+          background-color: #000000;
+        }
+        #carouselExampleControls{
+          margin-top: -10px;
+          margin-bottom: -20px;
+          margin-right: 10px;
+        }
+        
+        #dropdownMenuButton1{
+          margin-left: 15px;
+        }
+        #inicio{
+          color: white;
+          
+        }
+        footer{
+          margin-bottom: auto;
+          margin-top: auto;
+        }
+        #telefone{
+          width: 250px;
+        }
+
+        
+        #options{
+          background-color: grey;
+          border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--Criando barra de navegação-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid" id="nav-bar">
+          <a class="navbar-brand" href="#"><img src="logo net.png" alt="" srcset=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="options"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="inicio" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Séries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Filmes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bombando</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Minha Lista</a>
+              </li>
+              
+              
+            </ul>
+            <!--Criando um botão com opções.-->
+            <div class="dropdown" >
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Mais
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Saiba mais</a></li>
+              </ul>
+            </div>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-danger" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--Criando carrosel de imagens-->
+      
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="maverick.jpeg" class="d-block w-100" alt="tin-tin">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Apenas uma descrição para a imagem</h5>
+              <p>imagem 1</p>
+            </div>
+          </div>
+          
+          
+            
+          <div class="carousel-item">
+            <img src="banner-doutor.jpeg" class="d-block w-100" alt="doutor estranho">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Apenas uma descrição para a imagem</h5>
+              <p>imagem 2</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="dinossaurio.jpeg" class="d-block w-100" alt="circulo de fogo">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Apenas uma descrição para a imagem</h5>
+              <p>imagem 3</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section>
+        <div>
+            <img src="obraa.png" id="fundo" alt="">
+        </div>
+        <!--Criando os cards-->
+        <div id="cards">
+            <section id="cards1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                          <h3 class="display-3 text-center" id="titulocards">VEJA</h3>
+                        </div>
+                        <div class="col-3">
+                            <div class="card editar-card" text-center >
+                                <img src="imagens1/voice-control.png" alt="podcast" class="card-img-top rounded-circle"  id="efeito-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">PodCast</h4>
+                                    <p class="card-text">Escute os novos episodios.</p>
+                                    <a href="#" class="btn btn-danger">Escute</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card editar-card" text-center id="cardtodo" >
+                                <img src="imagens1/adventure.png" alt="parede" class="card-img-top rounded-circle" id="efeito-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Documentarios</h4>
+                                    <p class="card-text">Assista as mais novas aventuras.</p>
+                                    <a href="#" class="btn btn-danger">Assistir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card editar-card" text-center >
+                                <img src="imagens1/video.png" alt="parede" class="card-img-top rounded-circle" id="efeito-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Filmes</h4>
+                                    <p class="card-text">Vejas os mais novos lançamentos</p>
+                                    <a href="#" class="btn btn-danger">Assistir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card editar-card" text-center >
+                                <img src="imagens1/smart-tv.png" alt="Series" class="card-img-top rounded-circle" id="efeito-img" >
+                                <div class="card-body">
+                                    <h4 class="card-title">Series</h4>
+                                    <p class="card-text">Novos episodios todas as sextas.</p>
+                                    <a href="#" class="btn btn-danger">caixinha</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!--Criando imagens-->
+    <section>
+      <div class="container" id="divdasimagens">
+          <div class="row">
+              <div class="col-7 align-self-center">
+                  <h1 class="display-3" >
+                      Viuva negra
+                  </h1>
+                  <br><h2 class="text-muted">A viuva negra, não é negra e nem viuva.</h2>
+                  <p>texto</p>
+              </div>
+              <div class="col-5"><img src="imagens1/viuvanegra.jpg" alt="viuva" style="max-height: 500px; "></div>
+                  
+          </div>
+          <hr/>
+          <div class="row">
+              <div class="col-7 align-self-center">
+               <img src="imagens1/sing2.png" alt="">
+          </div>
+          <div class="col-5">
+              <h1 class="display-3"> Sing 2
+              
+              </h1>
+              <h2>
+                  <br><span class="text-muted">Monte de animal cantor</span>
+              </h2>
+              <p>Miau au</p>
+          </div>
+      </div>
+  </section>
+
+ 
+
+      <!--Criando o rodapé-->
+     <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ><img src="imagens1/facebook.png" alt=""></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ><img src="imagens1/twitter.png" alt=""></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ><img src="imagens1/tik-tok.png" alt=""></a>
+
+      <!-- Instagram -->
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ><img src="imagens1/instagram.png" alt=""></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ><img src="imagens1/linkedin.png" alt=""></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ><img src="imagens1/whatsapp.png" alt=""></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</strong> 
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Endereço de email.</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Inscreva-se
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Dúvidas? Ligue 0800 591 8942.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"> Perguntas frequentes</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Relações com investidores</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Formas de assistir</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Informações corporativas</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Centro de ajuda</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Carreiras</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Termos de uso</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Entre em contato</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Teste de velocidade</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Privacidade</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Resgatar cartão pré-pago</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Conta</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Media Center</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Comprar cartão pré-pago</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Preferências de cookies</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Avisos legais</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="max-width: 200px;">
+    
+    © 2022 Copyright:<a class="text-white" href="https://mdbootstrap.com/">Netflix.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>

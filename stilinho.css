@@ -1,0 +1,38 @@
+#cards1{
+    margin-bottom: 10px;
+    
+    padding: 0,0;
+}
+
+.card{
+    background-image: linear-gradient(rgb(244, 234, 234),rgb(49, 49, 49),rgb(112, 108, 108),rgb(93,91,91));
+}
+.carousel-caption{
+    text-align: end;
+}
+#titulocards{
+    text-decoration: underline;
+    color: #ff00009c;
+
+}
+#efeito-img{
+    transition: transform 1s;
+
+}
+.editar-card{
+    transition: transform 1s;
+}
+#efeito-img:hover{
+    transform: scale(1.2) rotateY(360deg) rotateX(360deg);
+    cursor: pointer;
+}
+#dropdownMenuButton1{
+    margin-right: 15px;
+}
+
+/*#fundodocumentario{
+    background-image: url(imagens1/documentario.png);
+}
+#cardtodo{
+    background-color: #1FD29E;
+}*/

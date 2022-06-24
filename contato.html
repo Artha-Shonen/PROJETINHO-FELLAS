@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="stilinho.css">
+    <style>
+              
+        #nav-bar{
+          background-image: linear-gradient(black,black,black,rgb(15%15%15%));
+        }
+        .nav-link{
+          color: white;
+        }
+        .nav-link active{
+          color: white;
+        }
+        .nav-item dropdown{
+          margin-top: -10px;
+        }
+        body{
+          background-color: #000000;
+        }
+        #carouselExampleControls{
+          margin-top: -10px;
+          margin-bottom: -20px;
+          margin-right: 10px;
+        }
+        
+        #dropdownMenuButton1{
+          margin-left: 15px;
+        }
+        #inicio{
+          color: white;
+          
+        }
+        footer{
+          margin-bottom: auto;
+          margin-top: 90%;
+          
+        }
+        
+
+        
+        #options{
+          background-color: grey;
+          border-radius: 5px;
+        }
+        #inputstuts{
+            color: aliceblue;
+        }
+        .form-text{
+            color: aliceblue;
+        }
+        #botaotextarea{
+            margin-top: 10px;
+            margin-left: 90%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid" id="nav-bar">
+          <a class="navbar-brand" href="#"><img src="logo net.png" alt="" srcset=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="options"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="inicio" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Séries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Filmes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bombando</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Minha Lista</a>
+              </li>
+              
+              
+            </ul>
+            <!--Criando um botão com opções.-->
+            <div class="dropdown" >
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Mais
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Saiba mais</a></li>
+              </ul>
+            </div>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-danger" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+      <section id="inputstuts">
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="display-5">
+                  Fale conosco 
+                </h3>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <form action="#" method="get">
+                <label for="nome-completo" class="form-label">Digite seu nome</label>
+                <input type="text" class="form-control" id="nome-completo" required>
+                <p class="form-text"> Digite seu nome completo neste campo</p>
+    
+                <label for="email-completo" class="form-label">Digite seu email</label>
+                <input type="email" class="form-control" id="email-completo" required>
+                <p class="form-text"> Digite seu email completo neste campo</p>
+    
+                <label for="telefone" class="form-label">Digite seu Telefone</label>
+                <input type="tel" class="form-control" id="telefone" required>
+                <p class="form-text"> Digite seu telefone neste campo</p>
+    
+                <label for="Estado" class="form-label">Digite seu Estado</label>
+                <input type="text" class="form-control" id="estado" required>
+                <p class="form-text"> Digite seu telefone neste campo</p>
+    
+                <label for="Cidade" class="form-label">Digite sua Cidade</label>
+                <input type="text" class="form-control" id="cidade" required>
+                <p class="form-text"> Digite sua cidade neste campo</p>
+                    
+                <label for="motivo-contato" class="form-label">Motivo do contato</label>
+                <select class="form-select" name="" id="">
+                  <option value="mot1">Reclamação</option>
+                  <option value="mot2">Duvidas</option>
+                  <option value="mot3">Devolução</option>
+                  <option value="mot4">Financeiro</option>
+                </select>
+                
+                <label for="caixa-texto" class="form-label">Digite sua mensagem</label>
+
+                <textarea class="form-control" id="caixa-texto" rows="3"></textarea>
+                <button type="submit" class="btn btn-light" id="botaotextarea">Enviar</button>
+                </form>
+              </div>
+            </div>
+        </div>
+      </section>
+
+       <!--Criando o rodapé-->
+     <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ><img src="imagens1/facebook.png" alt=""></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ><img src="imagens1/twitter.png" alt=""></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ><img src="imagens1/tik-tok.png" alt=""></a>
+  
+        <!-- Instagram -->
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ><img src="imagens1/instagram.png" alt=""></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ><img src="imagens1/linkedin.png" alt=""></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ><img src="imagens1/whatsapp.png" alt=""></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</strong> 
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Endereço de email.</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Inscreva-se
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Dúvidas? Ligue 0800 591 8942.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white"> Perguntas frequentes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Relações com investidores</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Formas de assistir</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Informações corporativas</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Centro de ajuda</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Carreiras</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Termos de uso</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Entre em contato</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Teste de velocidade</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Privacidade</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Resgatar cartão pré-pago</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Conta</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Media Center</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Comprar cartão pré-pago</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Preferências de cookies</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Avisos legais</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="max-width: 200px;">
+      
+      © 2022 Copyright:<a class="text-white" href="https://mdbootstrap.com/">Netflix.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <script src="js/bootstrap.js">
+
+    </script>
+</body>
+</html>
