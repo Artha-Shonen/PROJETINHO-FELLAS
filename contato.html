@@ -142,7 +142,7 @@
                 <p class="form-text"> Digite sua cidade neste campo</p>
                     
                 <label for="motivo-contato" class="form-label">Motivo do contato</label>
-                <select class="form-select" name="" id="">
+                <select class="form-select" name="" id="motivo">
                   <option value="mot1">Reclamação</option>
                   <option value="mot2">Duvidas</option>
                   <option value="mot3">Devolução</option>
@@ -151,8 +151,8 @@
                 
                 <label for="caixa-texto" class="form-label">Digite sua mensagem</label>
 
-                <textarea class="form-control" id="caixa-texto" rows="3"></textarea>
-                <button type="submit" class="btn btn-light" id="botaotextarea">Enviar</button>
+                <textarea class="form-control" id="caixatexto" rows="3"></textarea>
+                <button onclick="validarform()" type="button" class="btn btn-light" id="botaotextarea">Enviar</button>
                 </form>
               </div>
             </div>
@@ -345,8 +345,7 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-    <script src="js/bootstrap.js">
-
-    </script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
