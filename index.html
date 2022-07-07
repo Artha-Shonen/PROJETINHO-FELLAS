@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina Inicial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="stilinho.css">
+    <link rel="shortcut icon" href="imagens1/netflix-icon.png" type="image/x-icon">
     <style>
           #navbarsuprema{
           padding: 0%;
@@ -17,7 +18,8 @@
         }
         #nav-bar{
           background-image: linear-gradient(black,black,black,rgb(15%15%15%));
-          padding-top: 0%;
+          margin-bottom:10px ;
+          
         }
         .nav-link{
           color: white;
@@ -70,6 +72,10 @@
         #rodapesupremo{
           margin: auto;
         }
+        #anunciofilmes{
+          color: #ffffff;
+        }
+        
     </style>
 </head>
 <body>
@@ -83,20 +89,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" id="inicio" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Séries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Filmes</a>
+                <a class="nav-link " id="inicio"  href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="noticia.html">Noticias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Minha Lista</a>
+                <a class="nav-link" href="contato.html">Contatos</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              
               
               
             </ul>
@@ -106,9 +110,9 @@
                 Mais
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
-                <li><a class="dropdown-item" href="#">Login</a></li>
-                <li><a class="dropdown-item" href="#">Saiba mais</a></li>
+                <li><a class="dropdown-item" href="cadastro2.html">Cadastre-se</a></li>
+                <li><a class="dropdown-item" href="cadastro1.html">Login</a></li>
+                <li><a class="dropdown-item" href="trabalhe.html">Trabalhe conosco</a></li>
               </ul>
             </div>
 
@@ -182,7 +186,7 @@
                                 <div class="card-body">
                                     <h4 class="card-title">PodCast</h4>
                                     <p class="card-text">Escute os novos episodios.</p>
-                                    <a href="#" class="btn btn-danger">Escute</a>
+                                    <a href="#" class="btn btn-danger">Escutar</a>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +216,7 @@
                                 <div class="card-body">
                                     <h4 class="card-title">Series</h4>
                                     <p class="card-text">Novos episodios todas as sextas.</p>
-                                    <a href="#" class="btn btn-danger">caixinha</a>
+                                    <a href="#" class="btn btn-danger">Assistir</a>
                                 </div>
                             </div>
                         </div>
@@ -222,15 +226,15 @@
         </div>
     </section>
     <!--Criando imagens-->
-    <section>
+    <section id="anunciofilmes">
       <div class="container" id="divdasimagens">
           <div class="row">
-              <div class="col-7 align-self-center">
+              <div class="col-7 align-self-center" >
                   <h1 class="display-3" >
                       Viuva negra
                   </h1>
-                  <br><h2 class="text-muted">A viuva negra, não é negra e nem viuva.</h2>
-                  <p>texto</p>
+                  <br><h2 class="text-muted">Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz.</h2>
+                  <p>Gata</p>
               </div>
               <div class="col-5"><img src="imagens1/viuvanegra.jpg" alt="viuva" style="max-height: 500px; "></div>
                   
@@ -240,12 +244,12 @@
               <div class="col-7 align-self-center">
                <img src="imagens1/sing2.png" alt="">
           </div>
-          <div class="col-5">
+          <div class="col-5" >
               <h1 class="display-3"> Sing 2
               
               </h1>
               <h2>
-                  <br><span class="text-muted">Monte de animal cantor</span>
+                  <br><span class="text-muted">Na glamourosa cidade de Redshore, Buster Moon e a galera enfrentam seus medos, fazem novos amigos e superam seus limites em uma jornada para convencer o recluso astro Clay Calloway a subir aos palcos novamente.</span>
               </h2>
               <p>Miau au</p>
           </div>
@@ -308,24 +312,28 @@
           <!--Grid column-->
 
           <!--Grid column-->
+          <form action="#" method="post">
           <div class="col-md-5 col-12">
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example21" class="form-control" />
+              <input type="email" id="form5Example21" class="form-control" required>
               <label class="form-label" for="form5Example21">Endereço de email.</label>
-            </div>
-          </div>
+            
           <!--Grid column-->
 
           <!--Grid column-->
-          <form action="/cadastro1.html" method="post">
-          <div class="col-auto" >
+         
+            <a href="cadastro1.html"><div class="col-auto" >
             <!-- Submit button -->
-            <button type="submit" class="btn btn-outline-light mb-4">
+            <button type="submit"  class="btn btn-outline-light mb-4">
               Inscreva-se
-            </button>
+            </button></a>
+            
+          </form>
           </div>
-        </form>
+        </div>
+      </div>
+        
           <!--Grid column-->
         </div>
         <!--Grid row-->

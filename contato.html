@@ -7,10 +7,16 @@
     <title>Entre em contato</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="stilinho.css">
+    <link rel="shortcut icon" href="imagens1/netflix-icon.png" type="image/x-icon">
     <style>
               
+        #navbarsuprema{
+          padding: 0%;
+        }
+        
         #nav-bar{
           background-image: linear-gradient(black,black,black,rgb(15%15%15%));
+          margin-top: auto;
         }
         .nav-link{
           color: white;
@@ -39,11 +45,9 @@
         }
         footer{
           margin-bottom: auto;
-          margin-top: 90%;
+          margin-top: auto;
           
         }
-        
-
         
         #options{
           background-color: grey;
@@ -51,6 +55,7 @@
         }
         #inputstuts{
             color: aliceblue;
+            margin-bottom: auto;
         }
         .form-text{
             color: aliceblue;
@@ -59,54 +64,60 @@
             margin-top: 10px;
             margin-left: 90%;
         }
+        #navbargeral{
+          padding: 0%;
+        }
+        
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid" id="nav-bar">
-          <a class="navbar-brand" href="#"><img src="logo net.png" alt="" srcset=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" id="options"></span>
+  <!--Criando barra de navegação-->
+  <nav class="navbar navbar-expand-lg bg-light" id="navbarsuprema">
+    <div class="container-fluid" id="nav-bar">
+      <a class="navbar-brand" href="#"><img src="logo net.png" alt="" srcset=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" id="options"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" id="inicio" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticia.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contatos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          
+          
+          
+        </ul>
+        <!--Criando um botão com opções.-->
+        <div class="dropdown" >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Mais
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" id="inicio" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Séries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Filmes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bombando</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Minha Lista</a>
-              </li>
-              
-              
-            </ul>
-            <!--Criando um botão com opções.-->
-            <div class="dropdown" >
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Mais
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
-                <li><a class="dropdown-item" href="#">Login</a></li>
-                <li><a class="dropdown-item" href="#">Saiba mais</a></li>
-              </ul>
-            </div>
-
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button class="btn btn-danger" type="submit">Pesquisar</button>
-            </form>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="cadastro2.html">Cadastre-se</a></li>
+            <li><a class="dropdown-item" href="cadastro1.html">Login</a></li>
+            <li><a class="dropdown-item" href="trabalhe.html">Trabalhe conosco</a></li>
+          </ul>
         </div>
-      </nav>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-danger" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Criando carrosel de imagens-->
+  
     
       <section id="inputstuts">
         <div class="container">
@@ -161,191 +172,198 @@
 
        <!--Criando o rodapé-->
      <!-- Footer -->
-<footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ><img src="imagens1/facebook.png" alt=""></a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-        ><img src="imagens1/twitter.png" alt=""></a>
-  
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i
-        ><img src="imagens1/tik-tok.png" alt=""></a>
-  
-        <!-- Instagram -->
-        
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        ><img src="imagens1/instagram.png" alt=""></a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ><img src="imagens1/linkedin.png" alt=""></a>
-  
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i
-        ><img src="imagens1/whatsapp.png" alt=""></a>
-      </section>
-      <!-- Section: Social media -->
-  
-      <!-- Section: Form -->
-      <section class="">
-        <form action="">
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <p class="pt-2">
-                <strong>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</strong> 
-              </p>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example21" class="form-control" />
-                <label class="form-label" for="form5Example21">Endereço de email.</label>
+     <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ><img src="imagens1/facebook.png" alt=""></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ><img src="imagens1/twitter.png" alt=""></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ><img src="imagens1/tik-tok.png" alt=""></a>
+    
+          <!-- Instagram -->
+          
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ><img src="imagens1/instagram.png" alt=""></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ><img src="imagens1/linkedin.png" alt=""></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ><img src="imagens1/whatsapp.png" alt=""></a>
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</strong> 
+                </p>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <form action="#" method="post">
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example21" class="form-control" required>
+                  <label class="form-label" for="form5Example21">Endereço de email.</label>
+                
+              <!--Grid column-->
+    
+              <!--Grid column-->
+             
+                <a href="cadastro1.html"><div class="col-auto" >
+                <!-- Submit button -->
+                <button type="submit"  class="btn btn-outline-light mb-4">
+                  Inscreva-se
+                </button></a>
+                
+              </form>
               </div>
             </div>
+          </div>
+            
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+    
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            Dúvidas? Ligue 0800 591 8942.
+          </p>
+        </section>
+        <!-- Section: Text -->
+    
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
             <!--Grid column-->
-  
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white"> Perguntas frequentes</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Relações com investidores</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Formas de assistir</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Informações corporativas</a>
+                </li>
+              </ul>
+            </div>
             <!--Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Inscreva-se
-              </button>
+    
+            <!--Grid column-->
+            
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Centro de ajuda</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Carreiras</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Termos de uso</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Entre em contato</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Teste de velocidade</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Privacidade</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Resgatar cartão pré-pago</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Conta</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Media Center</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Comprar cartão pré-pago</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Preferências de cookies</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Avisos legais</a>
+                </li>
+              </ul>
             </div>
             <!--Grid column-->
           </div>
           <!--Grid row-->
-        </form>
-      </section>
-      <!-- Section: Form -->
-  
-      <!-- Section: Text -->
-      <section class="mb-4">
-        <p>
-          Dúvidas? Ligue 0800 591 8942.
-        </p>
-      </section>
-      <!-- Section: Text -->
-  
-      <!-- Section: Links -->
-      <section class="">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white"> Perguntas frequentes</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Relações com investidores</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Formas de assistir</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Informações corporativas</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Centro de ajuda</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Carreiras</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Termos de uso</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Entre em contato</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            
-  
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Teste de velocidade</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Privacidade</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Resgatar cartão pré-pago</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Conta</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="max-width: 200px;">
         
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Media Center</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Comprar cartão pré-pago</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Preferências de cookies</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Avisos legais</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="max-width: 200px;">
-      
-      © 2022 Copyright:<a class="text-white" href="https://mdbootstrap.com/">Netflix.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+        © 2022 Copyright:<a class="text-white" href="https://mdbootstrap.com/">Netflix.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
   <!-- Footer -->
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
